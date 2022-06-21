@@ -1,2 +1,10 @@
-<p>servers works!</p>
-<div app-servers></div>
+<h3>User Name</h3>
+<input type="text" class="form-Control" [(ngModel)]="userName" />
+<p>{{ userName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="userName === ''"
+  (click)="userName = ''"
+>
+  Add Server
+</button>
